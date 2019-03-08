@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度文库复制</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/hbook-ui/dist/css/hbook.min.css">
+    <style>
+        body{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .error{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            color: red;
+            font-size: 25px;
+        }
+        .progress{
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin-top: 25%;
+        }
+    </style>
+    <script type="text/javascript">
+        function flush() {
+            var labels = document.getElementsByTagName("body")
+            for (var i = 0; i < labels.length; i++) {
+                labels[i].remove();
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <p class="error">错误URL (3秒后自动返回)</p>
+    <div class="progress">
+        <div class="bar bar-primary" style="width: 50%;"></div>
+    </div>
+</body>
+
+</html>
